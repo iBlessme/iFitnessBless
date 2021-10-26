@@ -15,7 +15,6 @@ struct HomeView: View {
         NavigationView{
         HomeDetails()
                 .navigationTitle("Главная")
-               // .navigationBarTitleDisplayMode(.inline)
                 
                 .toolbar{
                     Button(action: {showProfile.toggle() }){

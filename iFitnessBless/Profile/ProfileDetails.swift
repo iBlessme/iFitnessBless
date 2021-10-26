@@ -8,19 +8,49 @@
 import SwiftUI
 
 struct ProfileDetails: View {
+    
+    @State private var isLogin = false
+    
     var body: some View {
         NavigationView{
             List{
                 Text("имя и фалилия")
+                    .font(.headline)
                 
                 Text("Номер телефона")
+                    .font(.headline)
                 
-                Button(action: {}){
-                    Label("Абонементы ", systemImage: "calendar")
+                NavigationLink(destination: SubscriptionDetail()){
+                    Image(systemName: "calendar")
                         .foregroundColor(.purple)
-                    }
+                    Text("Мои абонементы")
+                        .foregroundColor(.purple)
+                    
                 }
-                .navigationTitle("Здравствуйте")
+                
+                NavigationLink(destination: AboutFitnessClubDetail()){
+                    Image(systemName: "sportscourt.fill")
+                        .foregroundColor(.purple)
+                    Text("Фитнес-клуб")
+                        .foregroundColor(.purple)
+                }
+                .foregroundColor(.purple)
+                
+                NavigationLink(destination: AboutAppView()){
+                    Image(systemName: "laptopcomputer.and.iphone")
+                        .foregroundColor(.purple)
+                    Text("О приложении")
+                        .foregroundColor(.purple)
+                }
+                Button(action: {}){
+                    Label("Выйти", systemImage: "rectangle.portrait.and.arrow.right.fill")
+                        .foregroundColor(.red)
+                }
+                
+
+               
+                }
+                .navigationTitle("Профиль")
         }
     }
 }

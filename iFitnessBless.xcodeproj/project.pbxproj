@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207A898427280058001A0D34 /* SubscriptionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A898327280058001A0D34 /* SubscriptionDetail.swift */; };
+		207A8988272800A1001A0D34 /* AboutAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A8987272800A1001A0D34 /* AboutAppView.swift */; };
+		207A898B272800C9001A0D34 /* AboutFitnessClubDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A898A272800C9001A0D34 /* AboutFitnessClubDetail.swift */; };
+		207A898D2728103B001A0D34 /* AboutClubImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A898C2728103B001A0D34 /* AboutClubImageRow.swift */; };
+		207A898F2728172A001A0D34 /* SubscriptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A898E2728172A001A0D34 /* SubscriptionRow.swift */; };
 		20FB4F4027274DB900437747 /* iFitnessBlessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FB4F3F27274DB900437747 /* iFitnessBlessApp.swift */; };
 		20FB4F4227274DB900437747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FB4F4127274DB900437747 /* ContentView.swift */; };
 		20FB4F4427274DBC00437747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20FB4F4327274DBC00437747 /* Assets.xcassets */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		207A898327280058001A0D34 /* SubscriptionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDetail.swift; sourceTree = "<group>"; };
+		207A8987272800A1001A0D34 /* AboutAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppView.swift; sourceTree = "<group>"; };
+		207A898A272800C9001A0D34 /* AboutFitnessClubDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFitnessClubDetail.swift; sourceTree = "<group>"; };
+		207A898C2728103B001A0D34 /* AboutClubImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutClubImageRow.swift; sourceTree = "<group>"; };
+		207A898E2728172A001A0D34 /* SubscriptionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionRow.swift; sourceTree = "<group>"; };
 		20FB4F3C27274DB900437747 /* iFitnessBless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFitnessBless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20FB4F3F27274DB900437747 /* iFitnessBlessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFitnessBlessApp.swift; sourceTree = "<group>"; };
 		20FB4F4127274DB900437747 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +62,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		207A898127280008001A0D34 /* ProfileHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				207A8989272800A5001A0D34 /* AboutFitnessClub */,
+				207A898627280090001A0D34 /* AboutApp */,
+				207A898527280067001A0D34 /* Subscription */,
+			);
+			path = ProfileHelpers;
+			sourceTree = "<group>";
+		};
+		207A898527280067001A0D34 /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				207A898327280058001A0D34 /* SubscriptionDetail.swift */,
+				207A898E2728172A001A0D34 /* SubscriptionRow.swift */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		207A898627280090001A0D34 /* AboutApp */ = {
+			isa = PBXGroup;
+			children = (
+				207A8987272800A1001A0D34 /* AboutAppView.swift */,
+			);
+			path = AboutApp;
+			sourceTree = "<group>";
+		};
+		207A8989272800A5001A0D34 /* AboutFitnessClub */ = {
+			isa = PBXGroup;
+			children = (
+				207A898A272800C9001A0D34 /* AboutFitnessClubDetail.swift */,
+				207A898C2728103B001A0D34 /* AboutClubImageRow.swift */,
+			);
+			path = AboutFitnessClub;
+			sourceTree = "<group>";
+		};
 		20FB4F3327274DB900437747 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +178,7 @@
 		20FB4F6127276AC500437747 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				207A898127280008001A0D34 /* ProfileHelpers */,
 				20FB4F6227276AE300437747 /* ProfileDetails.swift */,
 			);
 			path = Profile;
@@ -211,13 +258,18 @@
 				20FB4F4227274DB900437747 /* ContentView.swift in Sources */,
 				20FB4F5E27274FFB00437747 /* HomeNewsRow.swift in Sources */,
 				20FB4F5227274E6900437747 /* HomeView.swift in Sources */,
+				207A898B272800C9001A0D34 /* AboutFitnessClubDetail.swift in Sources */,
 				20FB4F5627274E8B00437747 /* TrainersView.swift in Sources */,
+				207A8988272800A1001A0D34 /* AboutAppView.swift in Sources */,
 				20FB4F5C27274F6400437747 /* HomeDetails.swift in Sources */,
 				20FB4F5027274E4A00437747 /* TabBarView.swift in Sources */,
 				20FB4F5427274E7800437747 /* ShopView.swift in Sources */,
+				207A898427280058001A0D34 /* SubscriptionDetail.swift in Sources */,
 				20FB4F5A27274F0200437747 /* HomeNewsItems.swift in Sources */,
 				20FB4F6327276AE400437747 /* ProfileDetails.swift in Sources */,
 				20FB4F602727506D00437747 /* HomeMapHall.swift in Sources */,
+				207A898F2728172A001A0D34 /* SubscriptionRow.swift in Sources */,
+				207A898D2728103B001A0D34 /* AboutClubImageRow.swift in Sources */,
 				20FB4F4027274DB900437747 /* iFitnessBlessApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
