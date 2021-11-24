@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206E8CB1274E245F007DFDB5 /* TrainerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206E8CB0274E245F007DFDB5 /* TrainerItem.swift */; };
+		2079FFDF2735727C00E3D0D1 /* ShopItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2079FFDE2735727C00E3D0D1 /* ShopItemRow.swift */; };
 		207A898427280058001A0D34 /* SubscriptionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A898327280058001A0D34 /* SubscriptionDetail.swift */; };
 		207A8988272800A1001A0D34 /* AboutAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A8987272800A1001A0D34 /* AboutAppView.swift */; };
 		207A898B272800C9001A0D34 /* AboutFitnessClubDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A898A272800C9001A0D34 /* AboutFitnessClubDetail.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		206E8CB0274E245F007DFDB5 /* TrainerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerItem.swift; sourceTree = "<group>"; };
+		2079FFDE2735727C00E3D0D1 /* ShopItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemRow.swift; sourceTree = "<group>"; };
 		207A898327280058001A0D34 /* SubscriptionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDetail.swift; sourceTree = "<group>"; };
 		207A8987272800A1001A0D34 /* AboutAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppView.swift; sourceTree = "<group>"; };
 		207A898A272800C9001A0D34 /* AboutFitnessClubDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFitnessClubDetail.swift; sourceTree = "<group>"; };
@@ -62,6 +66,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		206E8CAD274E241F007DFDB5 /* TrainersHelper */ = {
+			isa = PBXGroup;
+			children = (
+				206E8CB0274E245F007DFDB5 /* TrainerItem.swift */,
+			);
+			path = TrainersHelper;
+			sourceTree = "<group>";
+		};
+		2079FFD9273570BB00E3D0D1 /* ShopHelper */ = {
+			isa = PBXGroup;
+			children = (
+				2079FFDE2735727C00E3D0D1 /* ShopItemRow.swift */,
+			);
+			path = ShopHelper;
+			sourceTree = "<group>";
+		};
 		207A898127280008001A0D34 /* ProfileHelpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +179,8 @@
 		20FB4F5727274EC800437747 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				206E8CAD274E241F007DFDB5 /* TrainersHelper */,
+				2079FFD9273570BB00E3D0D1 /* ShopHelper */,
 				20FB4F5827274EDB00437747 /* HomeHelper */,
 			);
 			path = Helpers;
@@ -265,6 +287,8 @@
 				20FB4F5027274E4A00437747 /* TabBarView.swift in Sources */,
 				20FB4F5427274E7800437747 /* ShopView.swift in Sources */,
 				207A898427280058001A0D34 /* SubscriptionDetail.swift in Sources */,
+				2079FFDF2735727C00E3D0D1 /* ShopItemRow.swift in Sources */,
+				206E8CB1274E245F007DFDB5 /* TrainerItem.swift in Sources */,
 				20FB4F5A27274F0200437747 /* HomeNewsItems.swift in Sources */,
 				20FB4F6327276AE400437747 /* ProfileDetails.swift in Sources */,
 				20FB4F602727506D00437747 /* HomeMapHall.swift in Sources */,
