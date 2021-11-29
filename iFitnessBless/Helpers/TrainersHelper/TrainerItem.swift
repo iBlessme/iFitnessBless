@@ -12,6 +12,7 @@ struct TrainerItem: View {
         VStack(alignment: .leading){
             HStack{
                 Text("🏃🏾‍♂️")
+                    .font(.system(size: 30))
                 Text("Евгений Королев")
                     .font(.headline)
             }

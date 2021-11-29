@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		206E8CB1274E245F007DFDB5 /* TrainerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206E8CB0274E245F007DFDB5 /* TrainerItem.swift */; };
+		2070E32627556CEC001EF55F /* Abonement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070E32527556CEC001EF55F /* Abonement.swift */; };
+		2070E32827556D02001EF55F /* AbonementsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070E32727556D02001EF55F /* AbonementsModel.swift */; };
 		2079FFDF2735727C00E3D0D1 /* ShopItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2079FFDE2735727C00E3D0D1 /* ShopItemRow.swift */; };
 		207A898427280058001A0D34 /* SubscriptionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A898327280058001A0D34 /* SubscriptionDetail.swift */; };
 		207A8988272800A1001A0D34 /* AboutAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A8987272800A1001A0D34 /* AboutAppView.swift */; };
 		207A898B272800C9001A0D34 /* AboutFitnessClubDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A898A272800C9001A0D34 /* AboutFitnessClubDetail.swift */; };
 		207A898D2728103B001A0D34 /* AboutClubImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A898C2728103B001A0D34 /* AboutClubImageRow.swift */; };
 		207A898F2728172A001A0D34 /* SubscriptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A898E2728172A001A0D34 /* SubscriptionRow.swift */; };
+		20AFED702755539A00CCD562 /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AFED6F2755539A00CCD562 /* ShopItem.swift */; };
 		20FB4F4027274DB900437747 /* iFitnessBlessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FB4F3F27274DB900437747 /* iFitnessBlessApp.swift */; };
 		20FB4F4227274DB900437747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FB4F4127274DB900437747 /* ContentView.swift */; };
 		20FB4F4427274DBC00437747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20FB4F4327274DBC00437747 /* Assets.xcassets */; };
@@ -32,12 +35,15 @@
 
 /* Begin PBXFileReference section */
 		206E8CB0274E245F007DFDB5 /* TrainerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerItem.swift; sourceTree = "<group>"; };
+		2070E32527556CEC001EF55F /* Abonement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abonement.swift; sourceTree = "<group>"; };
+		2070E32727556D02001EF55F /* AbonementsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonementsModel.swift; sourceTree = "<group>"; };
 		2079FFDE2735727C00E3D0D1 /* ShopItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemRow.swift; sourceTree = "<group>"; };
 		207A898327280058001A0D34 /* SubscriptionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDetail.swift; sourceTree = "<group>"; };
 		207A8987272800A1001A0D34 /* AboutAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppView.swift; sourceTree = "<group>"; };
 		207A898A272800C9001A0D34 /* AboutFitnessClubDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFitnessClubDetail.swift; sourceTree = "<group>"; };
 		207A898C2728103B001A0D34 /* AboutClubImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutClubImageRow.swift; sourceTree = "<group>"; };
 		207A898E2728172A001A0D34 /* SubscriptionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionRow.swift; sourceTree = "<group>"; };
+		20AFED6F2755539A00CCD562 /* ShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
 		20FB4F3C27274DB900437747 /* iFitnessBless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFitnessBless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20FB4F3F27274DB900437747 /* iFitnessBlessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFitnessBlessApp.swift; sourceTree = "<group>"; };
 		20FB4F4127274DB900437747 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				2079FFDE2735727C00E3D0D1 /* ShopItemRow.swift */,
+				20AFED6F2755539A00CCD562 /* ShopItem.swift */,
 			);
 			path = ShopHelper;
 			sourceTree = "<group>";
@@ -118,6 +125,22 @@
 			path = AboutFitnessClub;
 			sourceTree = "<group>";
 		};
+		20A5E1DE275102B40010BFC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2070E32527556CEC001EF55F /* Abonement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		20A5E1E12751045E0010BFC4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2070E32727556D02001EF55F /* AbonementsModel.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		20FB4F3327274DB900437747 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +160,8 @@
 		20FB4F3E27274DB900437747 /* iFitnessBless */ = {
 			isa = PBXGroup;
 			children = (
+				20A5E1E12751045E0010BFC4 /* Services */,
+				20A5E1DE275102B40010BFC4 /* Models */,
 				20FB4F6127276AC500437747 /* Profile */,
 				20FB4F5727274EC800437747 /* Helpers */,
 				20FB4F4E27274E2B00437747 /* TabBar */,
@@ -279,11 +304,13 @@
 			files = (
 				20FB4F4227274DB900437747 /* ContentView.swift in Sources */,
 				20FB4F5E27274FFB00437747 /* HomeNewsRow.swift in Sources */,
+				20AFED702755539A00CCD562 /* ShopItem.swift in Sources */,
 				20FB4F5227274E6900437747 /* HomeView.swift in Sources */,
 				207A898B272800C9001A0D34 /* AboutFitnessClubDetail.swift in Sources */,
 				20FB4F5627274E8B00437747 /* TrainersView.swift in Sources */,
 				207A8988272800A1001A0D34 /* AboutAppView.swift in Sources */,
 				20FB4F5C27274F6400437747 /* HomeDetails.swift in Sources */,
+				2070E32827556D02001EF55F /* AbonementsModel.swift in Sources */,
 				20FB4F5027274E4A00437747 /* TabBarView.swift in Sources */,
 				20FB4F5427274E7800437747 /* ShopView.swift in Sources */,
 				207A898427280058001A0D34 /* SubscriptionDetail.swift in Sources */,
@@ -291,6 +318,7 @@
 				206E8CB1274E245F007DFDB5 /* TrainerItem.swift in Sources */,
 				20FB4F5A27274F0200437747 /* HomeNewsItems.swift in Sources */,
 				20FB4F6327276AE400437747 /* ProfileDetails.swift in Sources */,
+				2070E32627556CEC001EF55F /* Abonement.swift in Sources */,
 				20FB4F602727506D00437747 /* HomeMapHall.swift in Sources */,
 				207A898F2728172A001A0D34 /* SubscriptionRow.swift in Sources */,
 				207A898D2728103B001A0D34 /* AboutClubImageRow.swift in Sources */,

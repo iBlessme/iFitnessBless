@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ShopView: View {
+//    @State var abonements: [Abonement] = []
+   
+    
     var body: some View {
         NavigationView(){
             ScrollView{
-                ForEach(1..<20) {index in
-                    ShopItemRow()
-                    Divider()
-                }
+//                ForEach{
+//                    ShopItemRow()
+//                    Divider()
+//                }
             }
             .navigationTitle("Магазин")
         }

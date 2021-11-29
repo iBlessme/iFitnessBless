@@ -10,7 +10,7 @@ import SwiftUI
 struct TrainersView: View {
     var body: some View {
         NavigationView{
-            List{
+            List(){
                 ForEach(1..<20){ index in
                 TrainerItem()
                 }

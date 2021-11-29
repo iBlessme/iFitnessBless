@@ -4,14 +4,20 @@
 //
 //  Created by Blessme on 05.11.2021.
 //
-
+import Combine
+import Foundation
 import SwiftUI
 
 struct ShopItemRow: View {
+        @State var abonementModel = [Abonements]()
+     
+    
+    
     var body: some View {
+      
         VStack(alignment: .center, spacing: 30) {
             VStack(alignment: .leading, spacing: 10){
-                Text("🚀  Вводный курс. On ramp")
+                Text("🚀  ")
                     .font(.headline)
             //    Divider()
                 
@@ -19,7 +25,7 @@ struct ShopItemRow: View {
                     Text("📅  Расписание: ")
                         .font(.subheadline)
                     
-                    Text("ПН-ПТ: 09:00 - 23:00")
+                    Text("ПН-ПТ: распиание")
                         .font(.subheadline)
                 }
                 
@@ -45,14 +51,18 @@ struct ShopItemRow: View {
             .background(LinearGradient(gradient: Gradient(colors: [.blue,.pink]), startPoint: .topLeading, endPoint: .bottomTrailing))
                 .clipShape(Rectangle())
                 .cornerRadius(20)
-                .shadow(color: .black, radius: 5, x: 0, y: 0)
+                .shadow(color: .gray, radius: 1, x: 5, y: 5)
            
         
-        }
+            }
         .padding()
-        
+        .onAppear(){
+            AbonementModel().fetch{abonements in
+                self.abonementModel = abonements
+            }
+            }
+        }
     }
-}
 
 struct ShopItemRow_Previews: PreviewProvider {
     static var previews: some View {
