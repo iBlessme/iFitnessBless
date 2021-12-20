@@ -14,11 +14,16 @@ public class AbonementModel: ObservableObject{
             print("Неправильная ссылка")
             return
         }
+   
         URLSession.shared.dataTask(with: url) {(data, response, error) in
-            let abonements = try! JSONDecoder().decode([Abonements].self, from: data!)
+            if let data = data {
+            let abonements = try! JSONDecoder().decode([Abonements].self, from: data)
             print(abonements)
             DispatchQueue.main.async {
                 completion(abonements)
+            }
+            }else{
+                print("Не удалось получить данные")
             }
         }
         .resume()

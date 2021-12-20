@@ -14,10 +14,10 @@ struct ProfileDetails: View {
     var body: some View {
         NavigationView{
             List{
-                Text("имя и фалилия")
+                Text("Легавин Владислав")
                     .font(.headline)
                 
-                Text("Номер телефона")
+                Text("89652989207")
                     .font(.headline)
                 
                 NavigationLink(destination: SubscriptionDetail()){

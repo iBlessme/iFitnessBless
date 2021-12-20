@@ -8,16 +8,26 @@
 import SwiftUI
 
 struct TrainerItem: View {
+    @State var workerModel = [Worker]()
+    
     var body: some View {
+        VStack{
+        List(workerModel, id: \.self){workers in
         VStack(alignment: .leading){
-            HStack{
-                Text("🏃🏾‍♂️")
-                    .font(.system(size: 30))
-                Text("Евгений Королев")
+                HStack{
+                    Text("🏃🏾‍♂️\(workers.user_club.surname) \(workers.user_club.name_user) \(workers.user_club.thirdname)")
+                        .font(.system(size: 16))
+                }
+            Text("😎 \(workers.position_work.name_position)")
                     .font(.headline)
+            Text("Номер телефона: \(workers.user_club.phone_number)")
+                }
             }
-            Text("Тренер по легкой атлетике")
-                .font(.subheadline)
+        .onAppear(){
+            WorkerModel().fetch{workers in
+                self.workerModel = workers
+                }
+            }
         }
     }
 }

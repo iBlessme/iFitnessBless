@@ -13,12 +13,7 @@ struct ShopView: View {
     
     var body: some View {
         NavigationView(){
-            ScrollView{
-//                ForEach{
-//                    ShopItemRow()
-//                    Divider()
-//                }
-            }
+            ShopItem()
             .navigationTitle("Магазин")
         }
     }

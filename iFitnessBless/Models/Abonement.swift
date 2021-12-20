@@ -9,8 +9,8 @@ import Foundation
 
 struct Abonements: Hashable, Codable{
     public var id: Int
-   public var name_abonement, cost_abonement, date_start, date_finish: String
-   public var bonus_programms_id: Int
-   public var created_at, updated_at: String
+    public var name_abonement, cost_abonement, date_start, date_finish: String
+    public var bonus_programms_id: Int
+     public var bonus: BonusProgram
     
 }

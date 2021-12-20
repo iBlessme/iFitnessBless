@@ -10,11 +10,7 @@ import SwiftUI
 struct TrainersView: View {
     var body: some View {
         NavigationView{
-            List(){
-                ForEach(1..<20){ index in
-                TrainerItem()
-                }
-            }
+            TrainerItem()
                 .navigationTitle("Инструктора")
         }
     }
